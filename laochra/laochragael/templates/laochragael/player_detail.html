@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>Player Information</h3>
+	<div id="player detail">
+		<div id="player first_name"> First name: {{ m.first_name }}</div}>
+		<div id="player last_name"> Last name: {{ m.last_name }}</div>
+		<div id="player position"> Position: {{ m.position }}</div>
+</div>
+
+
+
+<p><a href = "{% url 'player_update' member_number=m.id %}">Update this information</a>
+
+{% endblock %}
+
+
+
